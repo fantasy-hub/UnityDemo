@@ -27,7 +27,7 @@ public class Test04 : MonoBehaviour
 
     /**
      * @碰撞函数
-     * 一般卸载角色自己身上
+     * 一般写在角色自己身上
      */
     private void OnCollisionEnter(Collision collision)
     {
@@ -44,8 +44,8 @@ public class Test04 : MonoBehaviour
 
     /**
      * @碰撞触发器
-     * 用来判断进入了触发区域
-     * 一般卸载被角色碰撞到的物体身上
+     * 用来判断进入了触发区域，触发区域不需要有重力
+     * 一般写在被角色碰撞到的物体身上
      * 激活触发器的一方必须具有刚体属性
      * 如果物体勾选了isTriggle，碰撞器不再产生阻碍物体运动的效果
      * 而是只会检测物体是否进入碰撞区域
